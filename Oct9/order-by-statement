@@ -1,0 +1,6 @@
+SELECT `district`,
+ `id`, 
+ `name` as `city`
+FROM `world`.`city`
+Where countrycode = "usa"
+order by  `city` desc
