@@ -1,0 +1,9 @@
+select *
+from `world`.city as A
+left join  world.country as B
+on A.CountryCode = B.Code
+union 
+select *
+from `world`.city as A
+right join  world.country as B
+on A.CountryCode = B.Code
